@@ -24,28 +24,6 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
-let wheelTarget = window.scrollY;
-let wheelFrame = null;
-const smoothWheel = () => {
-  const current = window.scrollY;
-  const remaining = wheelTarget - current;
-  if (Math.abs(remaining) < .6) {
-    window.scrollTo(0, wheelTarget);
-    wheelFrame = null;
-    return;
-  }
-  window.scrollTo(0, current + remaining * .14);
-  wheelFrame = requestAnimationFrame(smoothWheel);
-};
-
-window.addEventListener('wheel', (event) => {
-  if (event.ctrlKey || event.metaKey || event.shiftKey) return;
-  event.preventDefault();
-  const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-  wheelTarget = Math.max(0, Math.min(maxScroll, (wheelFrame ? wheelTarget : window.scrollY) + event.deltaY * .9));
-  if (!wheelFrame) wheelFrame = requestAnimationFrame(smoothWheel);
-}, { passive: false });
-
 if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
