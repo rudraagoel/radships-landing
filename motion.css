@@ -1,0 +1,33 @@
+/* Motion only. This file intentionally does not change visual tokens or layout. */
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+
+.topbar { animation: header-enter .55s cubic-bezier(.2,.8,.2,1) both; }
+.hero-content > .eyebrow { animation: rise-in .65s .08s cubic-bezier(.2,.8,.2,1) both; }
+.hero-content > h1 { animation: rise-in .75s .18s cubic-bezier(.2,.8,.2,1) both; }
+.hero-content > .hero-copy { animation: rise-in .7s .3s cubic-bezier(.2,.8,.2,1) both; }
+.hero-content > .hero-actions { animation: rise-in .7s .42s cubic-bezier(.2,.8,.2,1) both; }
+.hero-side-note { animation: side-enter .8s .5s cubic-bezier(.2,.8,.2,1) both; }
+.hero::before { animation: hero-drift 14s ease-in-out infinite alternate; transform-origin: center; }
+.hero-grid { animation: grid-breathe 6s ease-in-out infinite; }
+.hero h1 { animation: title-glow 4.5s ease-in-out infinite; }
+.sticker { animation: sticker-float 4.5s ease-in-out infinite; }
+
+.motion-ready { opacity: 0; transform: translateY(24px); transition: opacity .72s cubic-bezier(.2,.75,.2,1), transform .72s cubic-bezier(.2,.75,.2,1); transition-delay: var(--motion-delay, 0ms); }
+.motion-ready.motion-in { opacity: 1; transform: translateY(0); }
+
+.button, .mini-cta, .rsvp-button, .arrow-link { transition: transform .24s cubic-bezier(.2,.8,.2,1), box-shadow .24s ease; }
+.button:hover, .mini-cta:hover, .rsvp-button:hover { animation: button-nudge .42s cubic-bezier(.2,.8,.2,1); }
+.step { transition: transform .28s cubic-bezier(.2,.8,.2,1), box-shadow .28s ease; }
+.step:hover { transform: translateY(-4px); }
+.step-icon { transition: transform .32s cubic-bezier(.2,.8,.2,1); }
+.step:hover .step-icon { transform: rotate(8deg) scale(1.08); }
+details { transition: background .25s ease, padding .25s ease; }
+
+@keyframes header-enter { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes rise-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes side-enter { from { opacity: 0; transform: translate(14px, 10px) rotate(7deg); } to { opacity: 1; transform: translate(0, 0) rotate(7deg); } }
+@keyframes hero-drift { from { transform: scale(1); } to { transform: scale(1.045); } }
+@keyframes grid-breathe { 0%,100% { opacity: .18; } 50% { opacity: .28; } }
+@keyframes title-glow { 0%,100% { filter: drop-shadow(0 0 0 rgba(255,255,255,0)); } 50% { filter: drop-shadow(0 0 10px rgba(255,255,255,.22)); } }
+@keyframes sticker-float { 0%,100% { translate: 0 0; } 50% { translate: 0 -7px; } }
+@keyframes button-nudge { 0% { transform: translate(0,0); } 45% { transform: translateY(-4px) scale(1.02); } 100% { transform: translate(0,0); } }

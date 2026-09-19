@@ -1,0 +1,20 @@
+/* Palette pass only: preserves all layout and animation behavior. */
+:root {
+  --pink: #ee4860;
+  --lime: #e43c45;
+  --blue: #7fb9e0;
+  --orange: #6f9bd0;
+}
+
+.button-pink { background: #e43c45; }
+.step-blue { background: #b9ddf1; }
+.step-orange { background: #9fc2e7; }
+
+/* Give the first screen a little more breathing room from the red. */
+.hero h1 em { color: #f47782; }
+.hero .button-pink { background: #d95460; }
+.hero .orb-one { background: #d96070; }
+.hero .eyebrow span { background: #b9ddf1; box-shadow: 0 0 0 3px rgba(185, 221, 241, .24); }
+.hero-side-note { color: #b9ddf1; }
+.mini-cta,
+.ticker { background: #b9ddf1; }
