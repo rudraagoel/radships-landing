@@ -2,7 +2,7 @@
 html { scroll-behavior: smooth; scroll-padding-top: 76px; }
 
 .topbar { animation: header-enter .55s cubic-bezier(.2,.8,.2,1) both; }
-.hero-content > .eyebrow { animation: rise-in .65s .08s cubic-bezier(.2,.8,.2,1) both; }
+.hero-content > .hero-meta { animation: rise-in .65s .43s cubic-bezier(.2,.8,.2,1) both; }
 .hero-content > h1 { animation: rise-in .75s .18s cubic-bezier(.2,.8,.2,1) both; }
 .hero-content > .hero-copy { animation: rise-in .7s .3s cubic-bezier(.2,.8,.2,1) both; }
 .hero-content > .hero-actions { animation: rise-in .7s .42s cubic-bezier(.2,.8,.2,1) both; }

@@ -14,7 +14,7 @@
 .hero h1 em { color: #f47782; }
 .hero .button-pink { background: #d95460; }
 .hero .orb-one { background: #d96070; }
-.hero .eyebrow span { background: #b9ddf1; box-shadow: 0 0 0 3px rgba(185, 221, 241, .24); }
+.hero-meta { margin: -.4rem 0 0; color: #b9ddf1; font: 500 .72rem 'DM Mono', monospace; letter-spacing: .08em; text-transform: uppercase; }
 .hero-side-note { color: #b9ddf1; }
 .mini-cta,
 .ticker { background: #b9ddf1; }
