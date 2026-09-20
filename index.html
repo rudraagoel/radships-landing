@@ -5,269 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="RadShips — A twelve-week Hack Club software shipping challenge. Build. Ship. Get rewarded." />
     <title>RadShips — Build. Ship. Get rewarded.</title>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0d12'/%3E%3Crect x='3' y='3' width='58' height='58' rx='11' fill='none' stroke='%2360a5fa' stroke-width='3'/%3E%3Ctext x='32' y='44' font-family='monospace' font-size='34' font-weight='bold' fill='%23f5f0e1' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="palette.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="motion.css" />
+    <link rel="stylesheet" href="site.css" />
   </head>
   <body>
-    <!-- Cursor spotlight layer (fixed, covers viewport) -->
-    <div class="spotlight" aria-hidden="true"></div>
-
-    <!-- Persistent Title Bar -->
-    <header class="topbar" role="banner">
-      <div class="topbar-inner">
-        <a class="wordmark pill-squircle" href="#top" aria-label="RadShips home">
-          <span class="wordmark-text">RAD<span>SHIPS</span></span>
-        </a>
-        <nav class="topbar-nav" aria-label="Main navigation">
-          <a class="nav-link" href="#how-it-works" data-label="How it works">How it works</a>
-          <a class="nav-link" href="#faq" data-label="FAQ">FAQ</a>
-        </nav>
-        <a class="btn btn-ghost pill-squircle" href="https://rsvp.hackclub.community/rad-ships" target="_blank" rel="noopener">
-          RSVP <span aria-hidden="true">→</span>
-        </a>
-      </div>
+    <header class="nav">
+      <a class="brand" href="#top" aria-label="RadShips home">rad<span>ships</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#how-it-works">how it works</a>
+        <a href="#faq">faq</a>
+        <a class="nav-rsvp" href="https://rsvp.hackclub.community/rad-ships">rsvp ↗</a>
+      </nav>
     </header>
 
     <main id="top">
-      <!-- === HERO / FRAME 1 === -->
-      <section class="hero" aria-labelledby="hero-title">
-        <!-- Grid background -->
-        <div class="hero-grid" aria-hidden="true"></div>
-        
-        <!-- Frosted glass backdrop with raindrops -->
-        <div class="hero-glass" aria-hidden="true">
-          <div class="raindrops" aria-hidden="true"></div>
+      <section class="hero">
+        <p class="kicker">a Hack Club YSWS · 12 weeks</p>
+        <h1>make rad<br /><em>software.</em></h1>
+        <p class="lead">Every Sunday, get a new theme. Make software around it. Ship by Friday and turn your hours into RadTokens.</p>
+        <p class="actions">
+          <a class="primary-link" href="https://rsvp.hackclub.community/rad-ships">rsvp for RadShips →</a>
+          <a class="plain-link" href="#how-it-works">see how it works ↓</a>
+        </p>
+
+        <dl class="facts">
+          <div><dt>themes</dt><dd>new every Sunday</dd></div>
+          <div><dt>deadline</dt><dd>ship by Friday</dd></div>
+          <div><dt>projects</dt><dd>software only</dd></div>
+          <div><dt>rewards</dt><dd>RadTokens</dd></div>
+        </dl>
+      </section>
+
+      <section class="content-section" id="how-it-works">
+        <p class="kicker">how it works</p>
+        <h2>four steps.</h2>
+
+        <div class="steps">
+          <article>
+            <span>01</span>
+            <div><h3>pick a theme</h3><p>A broad new prompt lands every Sunday. Interpret it any way you like.</p></div>
+          </article>
+          <article>
+            <span>02</span>
+            <div><h3>build software</h3><p>Build an app, game, website, bot, tool, API, or anything else that runs as software.</p></div>
+          </article>
+          <article>
+            <span>03</span>
+            <div><h3>ship it</h3><p>Get a working version out and log your time before Friday’s deadline.</p></div>
+          </article>
+          <article>
+            <span>04</span>
+            <div><h3>get RadTokens</h3><p>Approved work turns your logged hours into rewards. Then a new week begins.</p></div>
+          </article>
         </div>
 
-        <div class="hero-content">
-          <div class="ysws-pill pill-squircle" aria-label="Hack Club YSWS">
-            <span class="ysws-dot" aria-hidden="true"></span>
-            <span class="ysws-text">Hack Club YSWS</span>
-          </div>
-          <h1 id="hero-title" class="hero-title">
-            MAKE<br /><em>RAD</em> SOFTWARE
-          </h1>
-          <p class="hero-copy">A theme drops every Sunday. You ship working software by Friday. Survive it <em class="serif">twelve times</em> — earn RadTokens.</p>
-          <p class="hero-meta">~/radships/week-07 · 12 weeks · software only<span class="caret" aria-hidden="true"></span></p>
-          
-          <div class="hero-actions">
-            <a class="btn btn-primary pill-squircle" href="https://rsvp.hackclub.community/rad-ships" target="_blank" rel="noopener">
-              RSVP now <span class="btn-arrow" aria-hidden="true">→</span>
-            </a>
-            <a class="btn btn-secondary pill-squircle" href="#how-it-works" data-label="How it works">
-              How it works
-            </a>
-          </div>
+        <p class="note"><strong>Heads up:</strong> each theme closes on Friday. You can keep building a late project or take it to another YSWS if it qualifies, but it cannot earn RadShips credit after the deadline.</p>
+      </section>
+
+      <section class="content-section faq-section" id="faq">
+        <div class="faq-heading">
+          <p class="kicker">faq</p>
+          <h2>good<br />questions.</h2>
+          <p>Everything you need to know before you start shipping.</p>
+        </div>
+
+        <div class="faq-list">
+          <details open>
+            <summary>how does RadShips work?<span>+</span></summary>
+            <p>RadShips lasts 12 weeks. A new theme drops each Sunday. Build software around it through the week, then ship, submit, and log your hours by Friday. After review, approved hours become RadTokens. On Sunday, a new theme starts the loop again.</p>
+          </details>
+          <details>
+            <summary>what can I build?<span>+</span></summary>
+            <p>Anything that is software: apps, games, websites, tools, bots, APIs, browser extensions, and more. Build one big project or several small ones—there is no project limit.</p>
+          </details>
+          <details>
+            <summary>do I need to finish every week?<span>+</span></summary>
+            <p>Only if you want RadTokens for that week. You are welcome to skip a theme or continue a late project, but it cannot earn RadShips credit after the Friday deadline.</p>
+          </details>
+          <details>
+            <summary>can I use AI?<span>+</span></summary>
+            <p>A little AI help for debugging is okay. RadShips is about coding and learning, so the major work and understanding should be yours.</p>
+          </details>
+          <details>
+            <summary>how do RadTokens work?<span>+</span></summary>
+            <p>When a shipped project and its logged hours are approved, those hours become RadTokens. Spend them on rewards in the RadShips shop.</p>
+          </details>
         </div>
       </section>
 
-      <!-- === SECTION 01: THE BRIEF === -->
-      <section class="section brief" id="brief" aria-labelledby="brief-title">
-        <div class="container">
-          <div class="section-header">
-            <div class="section-kicker pill-squircle">01 / THE BRIEF</div>
-            <h2 id="brief-title" class="section-title">
-              TWELVE WEEKS.<br /><em><span class="scribble-wrap">TWELVE SHIPS.<svg class="scribble" viewBox="0 0 220 14" preserveAspectRatio="none" aria-hidden="true"><path d="M3 10 C 40 4, 80 12, 120 8 S 190 6, 217 9" /></svg></span></em>
-            </h2>
-            <p class="section-lead">Twelve weeks. Twelve ships. One rule: it has to run.</p>
-          </div>
-
-          <div class="brief-list">
-            <article class="brief-row">
-              <span class="brief-no" aria-hidden="true">01</span>
-              <div class="brief-main">
-                <h3>Pick a theme</h3>
-                <p>New prompt every Sunday. Open-ended — build whatever the theme sparks.</p>
-              </div>
-              <span class="brief-tag">SUNDAY</span>
-            </article>
-            <article class="brief-row">
-              <span class="brief-no" aria-hidden="true">02</span>
-              <div class="brief-main">
-                <h3>Build software</h3>
-                <p>App, game, tool, bot, site — solo or with friends. If it runs, it counts.</p>
-              </div>
-              <span class="brief-tag">MON–THU</span>
-            </article>
-            <article class="brief-row">
-              <span class="brief-no" aria-hidden="true">03</span>
-              <div class="brief-main">
-                <h3>Ship by Friday</h3>
-                <p>Demo or it didn't happen. Friday, 11:59pm ET — no extensions.</p>
-              </div>
-              <span class="brief-tag">FRIDAY</span>
-            </article>
-          </div>
-          <p class="margin-note">late work still counts — just not for tokens.</p>
-        </div>
-      </section>
-
-      <!-- === SECTION 02: HOW IT WORKS === -->
-      <section class="section how" id="how-it-works" aria-labelledby="how-title">
-        <!-- Water background: slow-drifting light blobs (transform-only) -->
-        <div class="water-bg" aria-hidden="true">
-          <div class="blob blob-a"></div>
-          <div class="blob blob-b"></div>
-          <div class="water-grid"></div>
-        </div>
-
-        <div class="container">
-          <div class="section-header">
-            <div class="section-kicker pill-squircle">02 / HOW IT WORKS</div>
-            <h2 id="how-title" class="section-title">THE WEEKLY<br /><em>LOOP</em></h2>
-          </div>
-
-          <!-- Keyboard Visualizer -->
-          <div class="keyboard-visualizer" aria-label="How it works">
-            <div class="keyboard-row" role="list">
-              <button class="key key-squircle" role="listitem" data-key="H" aria-label="Key H"><span class="key-label">H</span></button>
-              <button class="key key-squircle" role="listitem" data-key="O" aria-label="Key O"><span class="key-label">O</span></button>
-              <button class="key key-squircle" role="listitem" data-key="W" aria-label="Key W"><span class="key-label">W</span></button>
-              <button class="key key-squircle" role="listitem" data-key="I" aria-label="Key I"><span class="key-label">I</span></button>
-              <button class="key key-squircle" role="listitem" data-key="T" aria-label="Key T"><span class="key-label">T</span></button>
-              <button class="key key-squircle" role="listitem" data-key="W" aria-label="Key W"><span class="key-label">W</span></button>
-              <button class="key key-squircle" role="listitem" data-key="O" aria-label="Key O"><span class="key-label">O</span></button>
-              <button class="key key-squircle" role="listitem" data-key="R" aria-label="Key R"><span class="key-label">R</span></button>
-              <button class="key key-squircle" role="listitem" data-key="K" aria-label="Key K"><span class="key-label">K</span></button>
-              <button class="key key-squircle" role="listitem" data-key="S" aria-label="Key S"><span class="key-label">S</span></button>
-            </div>
-            <p class="keyboard-hint">$ scroll lights them up — or just type</p>
-          </div>
-
-          <!-- Weekly build log: a TUI tree, not cards -->
-          <div class="buildlog" role="list" aria-label="The weekly loop, step by step">
-            <div class="buildlog-head">
-              <span class="buildlog-path">week-07/</span>
-              <span class="buildlog-status"><span class="status-dot" aria-hidden="true"></span>running</span>
-            </div>
-
-            <article class="buildlog-row" role="listitem">
-              <span class="bl-tree" aria-hidden="true">├──</span>
-              <div class="bl-main">
-                <div class="bl-cmd"><span class="bl-prompt">$</span> sun <span class="bl-flag">--theme</span></div>
-                <p class="bl-desc">Sunday, sometime after lunch: a fresh prompt lands. Open-ended — build whatever it sparks.</p>
-              </div>
-              <span class="bl-chip">SUN</span>
-            </article>
-
-            <article class="buildlog-row" role="listitem">
-              <span class="bl-tree" aria-hidden="true">├──</span>
-              <div class="bl-main">
-                <div class="bl-cmd"><span class="bl-prompt">$</span> mon..thu <span class="bl-flag">make</span></div>
-                <p class="bl-desc">Anything that runs — app, game, tool, bot, site. Solo or with friends, any stack.</p>
-              </div>
-              <span class="bl-chip">BUILD</span>
-            </article>
-
-            <article class="buildlog-row" role="listitem">
-              <span class="bl-tree" aria-hidden="true">├──</span>
-              <div class="bl-main">
-                <div class="bl-cmd"><span class="bl-prompt">$</span> fri <span class="bl-flag">ship --log-hours</span></div>
-                <p class="bl-desc">Demo or it didn't happen. Friday, 11:59pm ET — no extensions.</p>
-              </div>
-              <span class="bl-chip">SHIP</span>
-            </article>
-
-            <article class="buildlog-row" role="listitem">
-              <span class="bl-tree" aria-hidden="true">└──</span>
-              <div class="bl-main">
-                <div class="bl-cmd"><span class="bl-prompt">$</span> review <span class="bl-flag">&amp;&amp; earn</span></div>
-                <p class="bl-desc">Real hours on real code become RadTokens. Spend them in the shop — then go again.</p>
-              </div>
-              <span class="bl-chip bl-chip-hot">TOKENS</span>
-            </article>
-
-            <div class="buildlog-foot"><span class="bl-prompt">$</span> exit 0 <span class="bl-flag">— see you sunday</span></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- === SECTION 03: FAQ === -->
-      <section class="section faq" id="faq" aria-labelledby="faq-title">
-        <div class="container">
-          <div class="section-header">
-            <div class="section-kicker pill-squircle">03 / FAQ</div>
-            <h2 id="faq-title" class="section-title">GOOD<br /><span>QUESTIONS.</span></h2>
-          </div>
-
-          <div class="faq-list">
-            <details class="faq-item squircle">
-              <summary class="faq-question">How does RadShips work?<span class="faq-chevron" aria-hidden="true">+</span></summary>
-              <div class="faq-answer">
-                <p>RadShips runs for 12 weeks. Each Sunday, a new theme drops. From Monday through Thursday, build any software project inspired by it—solo or with friends. By Friday, ship a working version, submit it, and log the hours you spent. After review, approved hours become RadTokens that you can redeem in the RadShips shop. Then a new theme arrives and the loop starts again.</p>
-                <p>Each theme closes after Friday. A project finished later can still be continued or submitted to another YSWS if it qualifies there, but it cannot earn RadTokens for the closed RadShips week.</p>
-              </div>
-            </details>
-
-            <details class="faq-item squircle">
-              <summary class="faq-question">What can I build?<span class="faq-chevron" aria-hidden="true">+</span></summary>
-              <div class="faq-answer">
-                <p>Anything that is software: apps, games, websites, tools, bots, APIs, browser extensions, and more. Build one big project or several small ones. Whatever you make must be working, shipped, and logged by Friday to count for that week.</p>
-              </div>
-            </details>
-
-            <details class="faq-item squircle">
-              <summary class="faq-question">Do I need to finish every week?<span class="faq-chevron" aria-hidden="true">+</span></summary>
-              <div class="faq-answer">
-                <p>Only if you want to earn RadTokens for that week. You are welcome to skip a theme or keep working on a late project, but late work cannot receive RadShips credit once that Friday deadline has passed.</p>
-              </div>
-            </details>
-
-            <details class="faq-item squircle">
-              <summary class="faq-question">Can I use AI?<span class="faq-chevron" aria-hidden="true">+</span></summary>
-              <div class="faq-answer">
-                <p>Use AI sparingly for debugging or small bits of help. RadShips is about actually coding and learning, so the major work and understanding should be yours.</p>
-              </div>
-            </details>
-
-            <details class="faq-item squircle">
-              <summary class="faq-question">How do RadTokens work?<span class="faq-chevron" aria-hidden="true">+</span></summary>
-              <div class="faq-answer">
-                <p>Log the time you spent on your shipped software. If the project and hours are approved, those hours turn into RadTokens. Spend them on rewards in the RadShips shop.</p>
-              </div>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <!-- === SECTION 04: READY TO TRY RAD === -->
-      <section class="section cta" id="cta" aria-labelledby="cta-title">
-        <div class="container">
-          <div class="cta-glass squircle" aria-hidden="true"></div>
-          
-          <div class="cta-content">
-            <h2 id="cta-title" class="section-title">READY TO<br /><em>BUILD RAD?</em></h2>
-            <p class="cta-lead">Software only. Your idea, your pace, one Friday deadline. Twelve weeks. Twelve ships.</p>
-            
-            <a class="btn btn-primary btn-lg pill-squircle" href="https://rsvp.hackclub.community/rad-ships" target="_blank" rel="noopener">
-              RSVP FOR RADSHIPS <span class="btn-arrow" aria-hidden="true">→</span>
-            </a>
-          </div>
-        </div>
-      </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer" role="contentinfo">
-      <div class="container">
-        <div class="footer-grid">
-          <a class="wordmark" href="#top" aria-label="RadShips home">
-            <span class="wordmark-text">RAD<span>SHIPS</span></span>
-          </a>
-          <p class="footer-credit">Made with code by Rudra Goel and Advay-CMD, a Hack Clubber. <span class="footer-ver">v1.0 — shipped on a Friday.</span></p>
-          <a class="btn btn-ghost btn-sm pill-squircle" href="https://rsvp.hackclub.community/rad-ships" target="_blank" rel="noopener">
-            RSVP <span aria-hidden="true">→</span>
-          </a>
-        </div>
-      </div>
+    <footer>
+      <p><a class="brand" href="#top">rad<span>ships</span></a> · made with code by Rudra Goel, a Hack Clubber.</p>
+      <a href="https://hackclub.com/">Hack Club ↗</a>
     </footer>
-
-    <script src="https://unpkg.com/lenis@1/dist/lenis.min.js" defer></script>
-    <script src="script.js" defer></script>
   </body>
 </html>
