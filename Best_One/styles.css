@@ -405,16 +405,6 @@ body.scrolled .wordmark { font-size: 1.1rem; padding: 0.35rem 0.7rem; }
   color: var(--text-muted);
 }
 
-/* One serif-italic moment — designers mix type, templates don't */
-.serif {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 0;
-}
-
-.hero-copy .serif { color: var(--cream); }
-
 .hero-meta {
   font-family: var(--font-mono);
   font-size: var(--text-xs);
@@ -490,29 +480,6 @@ body.scrolled .wordmark { font-size: 1.1rem; padding: 0.35rem 0.7rem; }
 .section-title span {
   font-style: normal;
   color: var(--blue-300);
-}
-
-/* Hand-drawn scribble under the tagline — one instance only */
-.scribble-wrap {
-  position: relative;
-  display: inline-block;
-}
-
-.scribble {
-  position: absolute;
-  left: -2%;
-  bottom: -0.22em;
-  width: 104%;
-  height: 0.34em;
-  overflow: visible;
-}
-
-.scribble path {
-  fill: none;
-  stroke: var(--blue-400);
-  stroke-width: 3.5;
-  stroke-linecap: round;
-  opacity: 0.7;
 }
 
 .section-lead {
@@ -592,26 +559,8 @@ body.scrolled .wordmark { font-size: 1.1rem; padding: 0.35rem 0.7rem; }
   letter-spacing: 0.1em;
   color: var(--blue-300);
   border: 1px solid rgba(147, 197, 253, 0.3);
-  border-radius: 4px;
   padding: 0.35rem 0.8rem;
   white-space: nowrap;
-  transform: rotate(-1.2deg);
-}
-
-.brief-row:nth-of-type(even) .brief-tag { transform: rotate(1.2deg); }
-
-/* Margin aside — small human footnote, not a component */
-.margin-note {
-  margin-top: 1.4rem;
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-  letter-spacing: 0.04em;
-  color: var(--text-dim);
-}
-
-.margin-note::before {
-  content: "> ";
-  color: var(--blue-400);
 }
 
 /* ---------- Section 02: How it works ---------- */
@@ -746,25 +695,11 @@ body.scrolled .wordmark { font-size: 1.1rem; padding: 0.35rem 0.7rem; }
 
 /* Build log — TUI tree */
 .buildlog {
-  position: relative;
   max-width: 60rem;
   border: 1px solid var(--glass-border-bright);
   background: rgba(13, 17, 24, 0.72);
   box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255, 255, 255, 0.06);
   overflow: hidden;
-}
-
-/* Hazard-stripe top edge — a shop-floor detail, not a glow */
-.buildlog::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: repeating-linear-gradient(135deg, var(--blue-500) 0 10px, transparent 10px 20px);
-  opacity: 0.45;
-  pointer-events: none;
 }
 
 .buildlog-head {
@@ -863,29 +798,15 @@ body.scrolled .wordmark { font-size: 1.1rem; padding: 0.35rem 0.7rem; }
   letter-spacing: 0.1em;
   color: var(--text-muted);
   border: 1px solid var(--glass-border-bright);
-  border-radius: 4px;
   padding: 0.35rem 0.8rem;
   white-space: nowrap;
   margin-top: 0.15rem;
-  transform: rotate(1.4deg);
 }
-
-.buildlog-row:nth-of-type(even) .bl-chip { transform: rotate(-1.4deg); }
 
 .bl-chip-hot {
   color: #071120;
   background: linear-gradient(135deg, var(--blue-300), var(--blue-500));
   border-color: transparent;
-}
-
-.buildlog-foot {
-  padding: 0.8rem 1.4rem;
-  border-top: 1px solid var(--glass-border);
-  background: rgba(255, 255, 255, 0.02);
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-  letter-spacing: 0.04em;
-  color: var(--text-dim);
 }
 
 /* ---------- FAQ ---------- */
