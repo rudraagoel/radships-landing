@@ -5,71 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="RadShips is a twelve-week Hack Club software shipping challenge." />
     <title>RadShips — Build. Ship. Get rewarded.</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="fixes.css" />
-    <link rel="stylesheet" href="responsive.css" />
-    <link rel="stylesheet" href="motion.css" />
-    <link rel="stylesheet" href="palette.css" />
+    <link rel="stylesheet" href="site.css" />
   </head>
   <body>
-    <header class="topbar">
-      <a class="wordmark" href="#top" aria-label="RadShips home">RAD<span>SHIPS</span></a>
+    <header class="nav">
+      <a class="brand" href="#top" aria-label="RadShips home">rad<span>ships</span></a>
       <nav aria-label="Main navigation">
-        <a href="#how-it-works">How it works</a>
-        <a href="#faq">FAQ</a>
+        <a href="#how-it-works">how it works</a>
+        <a href="#faq">faq</a>
+        <a class="nav-rsvp" href="https://rsvp.hackclub.community/rad-ships">rsvp ↗</a>
       </nav>
-      <a class="mini-cta" href="https://rsvp.hackclub.community/rad-ships">RSVP <span>↗</span></a>
     </header>
 
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-grid"></div>
-        <div class="orb orb-one"></div><div class="orb orb-two"></div>
-        <div class="hero-content">
-          <h1 id="hero-title">MAKE<br /><em>RAD</em> SOFTWARE.</h1>
-          <p class="hero-copy">A new software theme every Sunday. Build it. Ship it by Friday. Earn RadTokens.</p>
-          <p class="hero-meta">YSWS under Hack Club · 12 weeks</p>
-          <div class="hero-actions">
-            <a class="button button-pink" href="https://rsvp.hackclub.community/rad-ships">RSVP now <span>→</span></a>
-            <a class="text-link" href="#how-it-works">How it works <span>↓</span></a>
-          </div>
-        </div>
+      <section class="hero">
+        <p class="kicker">a Hack Club YSWS · 12 weeks</p>
+        <h1>make rad<br /><em>software.</em></h1>
+        <p class="lead">Every Sunday, get a new theme. Make software around it. Ship by Friday and turn your hours into RadTokens.</p>
+        <p class="actions">
+          <a class="primary-link" href="https://rsvp.hackclub.community/rad-ships">rsvp for RadShips →</a>
+          <a class="plain-link" href="#how-it-works">see how it works ↓</a>
+        </p>
+
+        <dl class="facts">
+          <div><dt>themes</dt><dd>new every Sunday</dd></div>
+          <div><dt>deadline</dt><dd>ship by Friday</dd></div>
+          <div><dt>projects</dt><dd>software only</dd></div>
+          <div><dt>rewards</dt><dd>RadTokens</dd></div>
+        </dl>
       </section>
 
-      <section class="how section-pad" id="how-it-works" aria-labelledby="how-title">
-        <div class="section-kicker light">01 / HOW IT WORKS</div>
-        <div class="how-heading">
-          <h2 id="how-title">ONE WEEK.<br /><em>ONE SHIP.</em></h2>
-          <p>A simple weekly loop, repeated for 12 weeks.</p>
-        </div>
+      <section class="content-section" id="how-it-works">
+        <p class="kicker">how it works</p>
+        <h2>four steps.</h2>
+
         <div class="steps">
-          <article class="step step-blue"><span class="step-no">SUNDAY / 01</span><div class="step-icon">✳</div><h3>Pick a theme</h3><p>A new prompt lands every Sunday.</p><span class="step-arrow">↘</span></article>
-          <article class="step step-lime"><span class="step-no">MON–THU / 02</span><div class="step-icon">⌘</div><h3>Build software</h3><p>Make an app, game, tool, bot, or website.</p><span class="step-arrow">↘</span></article>
-          <article class="step step-pink"><span class="step-no">FRIDAY / 03</span><div class="step-icon">↥</div><h3>Ship it</h3><p>Submit your working project and log your hours.</p><span class="step-arrow">↘</span></article>
-          <article class="step step-orange"><span class="step-no">REVIEW / 04</span><div class="step-icon">★</div><h3>Get RadTokens</h3><p>Approved work earns rewards. Then do it again.</p></article>
+          <article>
+            <span>01</span>
+            <div><h3>pick a theme</h3><p>A broad new prompt lands every Sunday. Interpret it any way you like.</p></div>
+          </article>
+          <article>
+            <span>02</span>
+            <div><h3>build software</h3><p>Build an app, game, website, bot, tool, API, or anything else that runs as software.</p></div>
+          </article>
+          <article>
+            <span>03</span>
+            <div><h3>ship it</h3><p>Get a working version out and log your time before Friday’s deadline.</p></div>
+          </article>
+          <article>
+            <span>04</span>
+            <div><h3>get RadTokens</h3><p>Approved work turns your logged hours into rewards. Then a new week begins.</p></div>
+          </article>
         </div>
+
+        <p class="note"><strong>Heads up:</strong> each theme closes on Friday. You can keep building a late project or take it to another YSWS if it qualifies, but it cannot earn RadShips credit after the deadline.</p>
       </section>
 
-      <section class="rsvp-section section-pad" id="rsvp" aria-labelledby="rsvp-title">
-        <div class="rsvp-copy"><div class="section-kicker light">02 / BOARDING NOW</div><h2 id="rsvp-title">READY TO<br />BUILD <em>RAD?</em></h2><p>Software only. Your idea, your pace, one Friday deadline.</p><div class="sticker">✦<br /><small>SOFTWARE<br />ONLY</small></div></div>
-        <a class="rsvp-button" href="https://rsvp.hackclub.community/rad-ships">RSVP<br /><span>FOR RADSHIPS ↗</span></a>
-      </section>
+      <section class="content-section faq-section" id="faq">
+        <div class="faq-heading">
+          <p class="kicker">faq</p>
+          <h2>good<br />questions.</h2>
+          <p>Everything you need to know before you start shipping.</p>
+        </div>
 
-      <section class="faq section-pad" id="faq" aria-labelledby="faq-title">
-        <div><div class="section-kicker">03 / FAQ</div><h2 id="faq-title">GOOD<br /><span>QUESTIONS.</span></h2></div>
         <div class="faq-list">
-          <details open><summary>How does RadShips work?<span>+</span></summary><p>RadShips runs for 12 weeks. Each Sunday, a new theme drops. From Monday through Thursday, build any software project inspired by it—solo or with friends. By Friday, ship a working version, submit it, and log the hours you spent. After review, approved hours become RadTokens that you can redeem in the RadShips shop. Then a new theme arrives and the loop starts again.</p><p>Each theme closes after Friday. A project finished later can still be continued or submitted to another YSWS if it qualifies there, but it cannot earn RadTokens for the closed RadShips week.</p></details>
-          <details><summary>What can I build?<span>+</span></summary><p>Anything that is software: apps, games, websites, tools, bots, APIs, browser extensions, and more. Build one big project or several small ones. Whatever you make must be working, shipped, and logged by Friday to count for that week.</p></details>
-          <details><summary>Do I need to finish every week?<span>+</span></summary><p>Only if you want to earn RadTokens for that week. You are welcome to skip a theme or keep working on a late project, but late work cannot receive RadShips credit once that Friday deadline has passed.</p></details>
-          <details><summary>Can I use AI?<span>+</span></summary><p>Use AI sparingly for debugging or small bits of help. RadShips is about actually coding and learning, so the major work and understanding should be yours.</p></details>
-          <details><summary>How do RadTokens work?<span>+</span></summary><p>Log the time you spent on your shipped software. If the project and hours are approved, those hours turn into RadTokens. Spend them on rewards in the RadShips shop.</p></details>
+          <details open>
+            <summary>how does RadShips work?<span>+</span></summary>
+            <p>RadShips lasts 12 weeks. A new theme drops each Sunday. Build software around it through the week, then ship, submit, and log your hours by Friday. After review, approved hours become RadTokens. On Sunday, a new theme starts the loop again.</p>
+          </details>
+          <details>
+            <summary>what can I build?<span>+</span></summary>
+            <p>Anything that is software: apps, games, websites, tools, bots, APIs, browser extensions, and more. Build one big project or several small ones—there is no project limit.</p>
+          </details>
+          <details>
+            <summary>do I need to finish every week?<span>+</span></summary>
+            <p>Only if you want RadTokens for that week. You are welcome to skip a theme or continue a late project, but it cannot earn RadShips credit after the Friday deadline.</p>
+          </details>
+          <details>
+            <summary>can I use AI?<span>+</span></summary>
+            <p>A little AI help for debugging is okay. RadShips is about coding and learning, so the major work and understanding should be yours.</p>
+          </details>
+          <details>
+            <summary>how do RadTokens work?<span>+</span></summary>
+            <p>When a shipped project and its logged hours are approved, those hours become RadTokens. Spend them on rewards in the RadShips shop.</p>
+          </details>
         </div>
+      </section>
+
+      <section class="closing">
+        <p class="kicker">boarding now</p>
+        <h2>got an idea?</h2>
+        <p>Make it real by Friday.</p>
+        <a class="primary-link" href="https://rsvp.hackclub.community/rad-ships">rsvp now →</a>
       </section>
     </main>
-    <footer><a class="wordmark" href="#top">RAD<span>SHIPS</span></a><p>Made with code by Rudra Goel, a Hack Clubber.</p><a href="https://rsvp.hackclub.community/rad-ships">RSVP ↗</a></footer>
-    <script src="script.js"></script>
+
+    <footer>
+      <p><a class="brand" href="#top">rad<span>ships</span></a> · made with code by Rudra Goel, a Hack Clubber.</p>
+      <a href="https://hackclub.com/">Hack Club ↗</a>
+    </footer>
   </body>
 </html>
