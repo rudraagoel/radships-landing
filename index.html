@@ -6,26 +6,29 @@
     <meta name="description" content="RadShips is a twelve-week Hack Club software shipping challenge." />
     <title>RadShips — Build. Ship. Get rewarded.</title>
     <link rel="stylesheet" href="css.css" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.26/dist/lenis.css">
+    <script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script> 
+    <script>new Lenis({ autoRaf: true, autoToggle: true, anchors: true, allowNestedScroll: true, naiveDimensions: true, stopInertiaOnNavigate: true })</script>
   </head>
   <body>
     <header class="nav">
       <a class="brand" href="#top" aria-label="RadShips home">Rad<span>Ships</span></a>
       <nav aria-label="Main navigation">
-        <a href="#how-it-works">How it works</a>
-        <a href="#faq">Faq</a>
-        <a href="index_modern.html" targer="_blank">Modern Site(NOT official)</a>
+        <a class="how-it-works" href="#how-it-works">How it works</a>
+        <a class="faq" href="#faq">Faq</a>
+        <a class="ms" href="index_modern.html" target="_blank">Modern Site(NOT official)</a>
         <a class="nav-rsvp" href="https://rsvp.hackclub.community/rad-ships">RSVP ↗</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero">
-        <p class="kicker">A Hack Club YSWS · 12 weeks</p>
+        <p class="kicker">$ echo A HACK CLUB YSWS · 12 WEEKS <span class="kitty-cursor"></span></p>
         <h1>Make RAD<br><em>software.</em></h1><br>
         <p class="lead">Every Sunday, get a new theme. Make software around it. Ship by Friday and turn your hours into RadTokens.</p>
         <p class="actions">
           <a class="primary-link" href="https://rsvp.hackclub.community/rad-ships">RSVP for RadShips →</a>
-          <a class="plain-link" href="#how-it-works">See how it works ↓</a>
+          <a class="ms" href="#how-it-works" style="text-decoration: none; color: white;">See how it works ↓</a>
         </p>
 
         <dl class="facts">
@@ -34,11 +37,10 @@
           <div><dt>Projects</dt><dd>Software only</dd></div>
           <div><dt>Rewards</dt><dd>RadTokens</dd></div>
         </dl>
-      </section>
 
       <section class="content-section" id="how-it-works">
         <p class="kicker">How it works</p>
-        <h2>Four steps.</h2>
+        <h2>Four steps</h2>
 
         <div class="steps">
           <article>
@@ -64,30 +66,30 @@
 
       <section class="content-section faq-section" id="faq">
         <div class="faq-heading">
-          <p class="kicker">faq</p>
+          <p class="kicker">Faq</p>
           <h2>Good<br />questions.</h2>
           <p>Everything you need to know before you start shipping.</p>
         </div>
 
         <div>
           <details open>
-            <summary>How does RadShips work?<span>+</span></summary>
+            <summary>How does RadShips work?<span>→</span></summary>
             <p>RadShips lasts 12 weeks. A new theme drops each Sunday. Build software around it through the week, then ship, submit, and log your hours by Friday. After review, approved hours become RadTokens. On Sunday, a new theme starts the loop again.</p>
           </details>
           <details>
-            <summary>What can I build?<span>+</span></summary>
+            <summary>What can I build?<span>→</span></summary>
             <p>Anything that is software: apps, games, websites, tools, bots, APIs, browser extensions, and more. Build one big project or several small ones—there is no project limit.</p>
           </details>
           <details>
-            <summary>Do I need to finish every week?<span>+</span></summary>
+            <summary>Do I need to finish every week?<span>→</span></summary>
             <p>Only if you want RadTokens for that week. You are welcome to skip a theme or continue a late project, but it cannot earn RadShips credit after the Friday deadline.</p>
           </details>
           <details>
-            <summary>Can I use AI?<span>+</span></summary>
+            <summary>Can I use AI?<span>→</span></summary>
             <p>A little AI help for debugging is okay. RadShips is about coding and learning, so the major work and understanding should be yours.</p>
           </details>
           <details>
-            <summary>How do RadTokens work?<span>+</span></summary>
+            <summary>How do RadTokens work?<span>→</span></summary>
             <p>When a shipped project and its logged hours are approved, those hours become RadTokens. Spend them on rewards in the RadShips shop.</p>
           </details>
         </div>
